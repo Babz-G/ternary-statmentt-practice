@@ -1,17 +1,18 @@
 import { useState } from "react";
 
-function ProductCard({ productName }) {
-  const [inStock, setInStock] = useState(true);
+// function ProductCard({ productName }) {
+function ProductCard({ data }) {
+  const [inStock, setInStock] = useState(data.inStock);
 
   return (
     <div className="product-card">
-      <h2 className="product-name"> {productName}</h2>
+      <h2 className="product-name"> {data.name}</h2>
       <p
         className={
           inStock ? "stock-message in-stock" : "stock-message out-of-stock"
         }
       >
-        {inStock ? "Available now!" : "Sorry, were out of stock."}
+        {inStock ? "✓ Available now!" : "✗ Sorry, were out of stock."}
       </p>
 
       <button
