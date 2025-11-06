@@ -32,3 +32,5 @@ export default ProductCard;
 
 // const [variableName, setVariableName] = useState(initialValue);
 // condition ? showThisIfTrue : showThisIfFalse
+
+// pray for meeee!
